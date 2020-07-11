@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\VS\\MovieLib\\MovieLib\\MovieLib.csproj": {}
+    "C:\\Praktika\\MovieLib\\MovieLib.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\VS\\MovieLib\\MovieLib\\MovieLib.csproj": {
+    "C:\\Praktika\\MovieLib\\MovieLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\VS\\MovieLib\\MovieLib\\MovieLib.csproj",
+        "projectUniqueName": "C:\\Praktika\\MovieLib\\MovieLib.csproj",
         "projectName": "MovieLib",
-        "projectPath": "D:\\Projects\\VS\\MovieLib\\MovieLib\\MovieLib.csproj",
-        "packagesPath": "C:\\Users\\zagir\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\VS\\MovieLib\\MovieLib\\obj\\",
+        "projectPath": "C:\\Praktika\\MovieLib\\MovieLib.csproj",
+        "packagesPath": "C:\\Users\\Perbudag\\.nuget\\packages\\",
+        "outputPath": "C:\\Praktika\\MovieLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\zagir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Perbudag\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

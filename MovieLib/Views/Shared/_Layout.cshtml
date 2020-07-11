@@ -8,7 +8,7 @@
     <body>
         @await Html.PartialAsync("HeaderPartial")
 
-        <div class="content">
+        <div class=@ViewBag.Class>
             @RenderBody()
         </div>
 

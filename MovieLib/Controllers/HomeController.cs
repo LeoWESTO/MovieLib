@@ -16,7 +16,7 @@ namespace MovieLib.Controllers
         {
             db = context;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Catalog()
         {
             return View(await db.Movies.ToListAsync());
         }
@@ -30,6 +30,16 @@ namespace MovieLib.Controllers
             db.Movies.Add(movie);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult ViewMovie()
+        {
+            return View();
+        }
+
+        public IActionResult Edit()
+        {
+            return View();
         }
     }
 }

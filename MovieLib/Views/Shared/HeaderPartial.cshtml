@@ -5,8 +5,11 @@
             <input />
             <button>Поиск</button>
         </div>
-        <a asp-action="Create" id="add_film">
-            Добавить фильм
-        </a>
+        @if (ViewBag.Button != null)
+        {
+            <a asp-action=@ViewBag.Button id="add_film">
+                @ViewBag.ButtonText
+            </a>
+        }
     </div>
 </header>
