@@ -1,0 +1,25 @@
+﻿@model MovieLib.Models.MovieModel
+@{
+    ViewBag.Title = "Добавление фильма";
+}
+    <form asp-action="Create" asp-controller="Home">
+        <div class="form-group">
+            <label asp-for="Title" class="control-label">Название: </label>
+            <input type="text" asp-for="Title" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ReleaseYear" class="control-label">Год выхода: </label>
+            <input type="text" asp-for="ReleaseYear" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PictureURL" class="control-label">Ссылка на постер: </label>
+            <input type="text" asp-for="PictureURL" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label">Описание фильма: </label>
+            <textarea asp-for="Description" class="form-control" rows="10" cols="45"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Сохранить" class="btn btn-default" />
+        </div>
+    </form>
