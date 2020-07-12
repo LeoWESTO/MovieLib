@@ -121,7 +121,6 @@ D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\MovieLib.RazorAssemblyI
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\MovieLib.TagHelpers.input.cache
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\MovieLib.TagHelpers.output.cache
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\MovieLib.RazorCoreGenerate.cache
-D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CssPartial.cshtml.g.cs
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Shared\MetatagsPartial.cshtml.g.cs
 D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -265,3 +264,7 @@ C:\Praktika\MovieLib\obj\Debug\netcoreapp3.1\MovieLib.genruntimeconfig.cache
 C:\Praktika\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Catalog.cshtml.g.cs
 C:\Praktika\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
 C:\Praktika\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewContent.cshtml.g.cs
+D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Catalog.cshtml.g.cs
+D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewContent.cshtml.g.cs
+D:\Projects\VS\MovieLib\MovieLib\obj\Debug\netcoreapp3.1\Razor\Views\Home\Delete.cshtml.g.cs

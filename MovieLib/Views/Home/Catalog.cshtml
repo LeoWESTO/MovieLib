@@ -11,9 +11,10 @@
         foreach (var movie in Model)
         {
             <div id="movie_sample">
-                <img src="@movie.PictureURL" />
-                <span>@movie.Title</span>
-                <span>@movie.ReleaseYear</span>
+                <a asp-action="ViewContent" asp-route-id="@movie.ID">
+                    <img src="@movie.PictureURL" />
+                </a>
+                <h1 id="movie_title">@movie.Title</h1>
             </div>
         }
     }

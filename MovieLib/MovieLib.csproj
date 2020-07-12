@@ -31,10 +31,4 @@
     <PackageReference Include="sqlite" Version="3.13.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="models.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
