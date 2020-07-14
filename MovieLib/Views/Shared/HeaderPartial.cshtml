@@ -7,7 +7,7 @@
         </div>
         @if (ViewBag.Button != null)
         {
-            <a asp-action=@ViewBag.Button id="add_film">
+            <a asp-action=@ViewBag.Button asp-route-id="@ViewBag.ID" id="add_film">
                 @ViewBag.ButtonText
             </a>
         }

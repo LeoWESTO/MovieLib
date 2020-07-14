@@ -3,6 +3,9 @@
     ViewBag.Title = "Редактировать фильм";
     ViewBag.Class = "EditContent";
     ViewBag.Css = "~/CSS/EditStyle.css";
+    ViewBag.Button = "Delete";
+    ViewBag.ButtonText = "Удалить";
+    ViewBag.ID = Model.ID;
 }
 
 <form asp-action="Edit" asp-controller="Home" asp-route-id="@Model.ID">

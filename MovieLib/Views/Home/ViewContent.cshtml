@@ -3,6 +3,9 @@
     ViewBag.Title = "Информация о фильме";
     ViewBag.Class = "ViewContent";
     ViewBag.Css = "~/CSS/ViewStyle.css";
+    ViewBag.Button = "Edit";
+    ViewBag.ButtonText = "Редактировать";
+    ViewBag.ID = Model.ID;
 }
     <form asp-action="ViewContent" asp-controller="Home" asp-route-id="@Model.ID">
         <div id="movie_info">
@@ -15,7 +18,5 @@
                 <label>@Model.Description</label>
             </div>
         </div>
-        <a asp-action="Edit" asp-route-id="@Model.ID">Редактировать</a>
-        <a asp-action="Delete" asp-route-id="@Model.ID">Удалить</a>
     </form>
 
