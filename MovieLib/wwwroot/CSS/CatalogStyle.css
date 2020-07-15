@@ -1,10 +1,35 @@
 .content {
-    background-color: white;
-    margin: 0 5% 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: 1.5fr;
-    grid-gap: 0.5vw;
-    padding: 0.5vw;
+    grid-template-columns: repeat(5, 17vw);
+    grid-auto-rows: 25.5vw;
+    grid-gap: 0.45vw;
+    padding: 1vw;
     text-align: center;
+}
+
+.movie_sample {
+    position: relative;
+    border: solid 2px;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.movie_title {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12.5vw;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    padding-top: 13vw;
+    font-size: 2vw;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.movie_sample:hover .movie_title {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
 }

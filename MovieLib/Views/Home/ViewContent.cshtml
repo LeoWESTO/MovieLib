@@ -1,7 +1,6 @@
 ﻿@model MovieLib.Models.MovieModel
 @{
     ViewBag.Title = "Информация о фильме";
-    ViewBag.Class = "ViewContent";
     ViewBag.Css = "~/CSS/ViewStyle.css";
     ViewBag.Button = "Edit";
     ViewBag.ButtonText = "Редактировать";
@@ -13,9 +12,9 @@
                 <img src="@Model.PictureURL" />
             </div>
             <div id="info">
-                <label>@Model.Title</label>
-                <label>@Model.ReleaseYear</label>
-                <label>@Model.Description</label>
+                <label id="title">@Model.Title</label>
+                <label>Год релиза: @Model.ReleaseYear</label>
+                <label id="description">@Model.Description</label>
             </div>
         </div>
     </form>

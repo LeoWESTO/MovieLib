@@ -1,7 +1,6 @@
 ﻿@model IEnumerable<MovieLib.Models.MovieModel>
 
 @{
-    ViewBag.Class = "content";
     ViewBag.Css = "~/CSS/CatalogStyle.css";
     ViewBag.Button = "Create";
     ViewBag.ButtonText = "Добавить Фильм";
@@ -10,16 +9,16 @@
     {
         foreach (var movie in Model)
         {
-            <div id="movie_sample">
-                <a asp-action="ViewContent" asp-route-id="@movie.ID">
-                    <img src="@movie.PictureURL" />
+            <div class="movie_sample">
+                <img src="@movie.PictureURL" />
+                <a asp-action="ViewContent" asp-route-id="@movie.ID" class="movie_title">
+                    @movie.Title
                 </a>
-                <h1 id="movie_title">@movie.Title</h1>
             </div>
         }
     }
     else
     {
-        <h4>База данных пуста. Добавьте фильм в базу нажав на кнопку "Добавить фильм"!</h4>
+        <h4>База данных пуста. <br/>Добавьте фильм в базу нажав на кнопку "Добавить фильм"!</h4>
     }
 }

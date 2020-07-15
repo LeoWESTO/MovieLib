@@ -4,14 +4,12 @@
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 5vw 1vw 5vw;
-    margin: 0 5% 0;
+    margin: 0 5vw 0;
     background-color: #CBCBD8;
+    border-bottom: solid;
 }
 
 #name_site {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #000000;
-    text-decoration: none;
     text-align: center;
     font-size: 5vw;
 }
@@ -34,7 +32,7 @@
     padding-left: 1.5vw;
 }
 
-#add_film {
+#header_button {
     font-size: 2.5vw;
     padding: 0.5vw;
     color: black;
@@ -44,8 +42,8 @@
 }
 
 img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -54,7 +52,28 @@ body {
     width: 100%;
 }
 
-#movie_sample > a > img{
-    width: 20vw;
-    height: 30vw;
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content {
+    margin: 0 5% 0;
+    background-color: silver;
+}
+
+body::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 15px;
+    border: solid 4px;
+    border-color: #E0E0E5;
 }

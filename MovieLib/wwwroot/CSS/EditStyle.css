@@ -1,5 +1,8 @@
-.EditContent {
-    background-color: white;
-    margin: 0 5% 0;
+.content {
     padding: 0.5vw;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
 }
