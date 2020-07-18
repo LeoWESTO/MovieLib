@@ -1,13 +1,23 @@
 ﻿<header class="header">
     <a id="name_site" href="/">MovieLib</a>
     <div>
-        <div id="movie_search">
-            <input />
-            <button>Поиск</button>
-        </div>
-        @if (ViewBag.Button != null)
+        @if (ViewBag.Action == "Create")
         {
-            <a asp-action=@ViewBag.Button asp-route-id="@ViewBag.ID" id="header_button">
+            <form asp-action="Catalog" method="get">
+                <div id="movie_search">
+                    <input name="SearchName" placeholder="Поиск по названию" />
+                    <button id="header_button" type="submit">Поиск</button>
+                </div>
+                <div id="movie_search">
+                    <input name="SearchGenre" placeholder="Поиск по жанрам" />
+                    <button id="header_button" type="submit">Поиск</button>
+                </div>
+            </form>
+        }
+
+        @if (ViewBag.Action != null)
+        {
+            <a asp-action=@ViewBag.Action asp-route-id="@ViewBag.ID" id="header_button">
                 @ViewBag.ButtonText
             </a>
         }

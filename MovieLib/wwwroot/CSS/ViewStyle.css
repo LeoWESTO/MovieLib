@@ -22,8 +22,9 @@
 }
 
 #title {
+    padding-top: 2vw;
+    font-size: 2vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 6vw;
     width: 100%;
 }
 

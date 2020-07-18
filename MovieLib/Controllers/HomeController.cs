@@ -17,15 +17,22 @@ namespace MovieLib.Controllers
         {
             db = context;
         }
-        public async Task<IActionResult> Catalog()
+        public async Task<IActionResult> Catalog(string SearchName, string SearchGenre)
         {
-            return View(await db.Movies.OrderBy(s => s.Title).ToListAsync());
+            if (String.IsNullOrEmpty(SearchName))
+            {
+                return View(await db.Movies.OrderBy(s => s.Title).ToListAsync());
+            }
+            else
+            {
+                return View(await db.Movies.Where(s => s.Title.Contains(SearchName)).ToListAsync());
+            }
         }
         public IActionResult Create()
         {
             return View();
         }
-        public async Task<IActionResult> ViewContent(string? id)
+        public async Task<IActionResult> ViewContent(string id)
         {
             if (id != null)
             {
@@ -36,7 +43,7 @@ namespace MovieLib.Controllers
             return NotFound();
         }
 
-        public async Task<IActionResult> Edit(string? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id != null)
             {
@@ -62,7 +69,7 @@ namespace MovieLib.Controllers
         }
         [HttpGet]
         [ActionName("Delete")]
-        public async Task<IActionResult> ConfirmDelete(string? id)
+        public async Task<IActionResult> ConfirmDelete(string id)
         {
             if (id != null)
             {
@@ -74,7 +81,7 @@ namespace MovieLib.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(string? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id != null)
             {
