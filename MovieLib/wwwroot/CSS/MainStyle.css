@@ -14,6 +14,11 @@
     font-size: 5vw;
 }
 
+#nav {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+}
+
 #movie_search {
     display: grid;
     grid-template-columns: 70% 25%;
@@ -33,6 +38,9 @@
 }
 
 #header_button {
+    line-height: 3vw;
+    width: 20vw;
+    text-align: center;
     font-size: 2.5vw;
     padding: 0.5vw;
     color: black;

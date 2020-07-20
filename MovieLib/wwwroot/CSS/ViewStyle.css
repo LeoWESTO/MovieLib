@@ -1,12 +1,18 @@
-.content {
+#header_button {
+    margin-left: 12.5vw;
+    line-height: 5vw;
+}
+    .content {
     padding: 0.5vw;
 }
+
 #movie_info {
     display: grid;
     grid-template-columns: 26vw 60.7vw;
     min-height: 39vw;
     grid-gap: 1vw;
 }
+
 #info {
     display: grid;
     grid-template-rows: 6vw 3vw 26vw;

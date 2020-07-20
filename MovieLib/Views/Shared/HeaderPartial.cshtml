@@ -1,13 +1,12 @@
 ﻿<header class="header">
     <a id="name_site" href="/">MovieLib</a>
-    <div>
+
+    <div id="nav">
         @if (ViewBag.Action == "Create")
         {
-            <form asp-action="Catalog" method="get">
-                <div id="movie_search">
+            <form asp-action="Catalog" method="get" id="movie_search">
                     <input name="SearchName" placeholder="Поиск по названию" />
-                    <button id="header_button" type="submit">Поиск</button>
-                </div>
+                    <button type="submit">Поиск</button>
             </form>
         }
 

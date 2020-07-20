@@ -33,3 +33,8 @@
     opacity: 1;
     background-color: rgba(0,0,0,0.5);
 }
+
+#no-content {
+    margin-top: 50%;
+    width: 86.5vw;
+}
